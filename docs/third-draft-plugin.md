@@ -1,8 +1,8 @@
 # Third Draft Plugin
 
 [third-draft](https://github.com/noaione/third-draft) is a self-hosted mirror that tracks works and
-their chapters. Like the [Komga plugin](./komga-plugin.md), it talks to *your own* server, so it
-needs a bit of one-time setup after installing.
+their chapters. Unlike the other plugins, it talks to *your own* server, so it needs a bit of
+one-time setup after installing.
 
 1. Install the Third Draft plugin.
 2. Create an API key on your instance under **Your account → API keys**. A read-only key is enough:

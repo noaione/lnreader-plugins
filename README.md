@@ -23,7 +23,6 @@ npm run dev:start
 - **[Plugin Development](./docs/docs.md)** - Complete API reference
 - **[Testing Guide](./docs/website-tutorial.md)** - Test plugins using the web interface
 - **[Live Check](./docs/testing.md)** - Required `npm run check:plugin` check before opening a PR
-- **[Komga Plugin](./docs/komga-plugin.md)** - Self-hosted server integration
 - **[Third Draft Plugin](./docs/third-draft-plugin.md)** - Self-hosted library server integration
 
 ## Testing Methods
