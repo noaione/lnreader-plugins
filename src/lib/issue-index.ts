@@ -4,7 +4,7 @@ export type IssueIndex = Record<string, IssueGroup[]>;
 
 export const ISSUE_INDEX_URL =
   import.meta.env?.VITE_ISSUE_INDEX_URL ||
-  'https://raw.githubusercontent.com/LNReader/lnreader-plugins/issue-index/issue-index.min.json';
+  'https://raw.githubusercontent.com/noaione/lnreader-plugins/issue-index/issue-index.min.json';
 
 export const CATEGORY_LABELS = [
   'Other',

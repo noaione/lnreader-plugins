@@ -20,7 +20,7 @@ jobs:
     permissions:
       contents: write
     if: |
-      github.repository == 'LNReader/lnreader-plugins' &&
+      github.repository == 'noaione/lnreader-plugins' &&
       github.event.workflow_run.conclusion == 'success' &&
       github.event.workflow_run.event == 'push'
     steps:

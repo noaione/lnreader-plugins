@@ -53,5 +53,4 @@ Before submitting your plugin, verify that:
 - **Plugin Development:** See [docs.md](./docs.md) for API reference
 - **Quick Start:** See [quickstart.md](./quickstart.md) for plugin creation
 - **Pre-PR Check:** See [testing.md](./testing.md) for the required `npm run check:plugin` live check
-- **Issues:** Create a [GitHub issue](https://github.com/LNReader/lnreader-plugins/issues/new)
-- **Community:** Join us on [Discord](https://discord.gg/QdcWN4MD63)
+- **Issues:** Create a [GitHub issue](https://github.com/noaione/lnreader-plugins/issues/new)

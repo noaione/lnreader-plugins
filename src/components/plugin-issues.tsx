@@ -110,7 +110,7 @@ function IssueCategory({ group }: { group: IssueGroup }) {
         {issueNumbers.map(number => (
           <a
             key={number}
-            href={`https://github.com/LNReader/lnreader-plugins/issues/${number}`}
+            href={`https://github.com/noaione/lnreader-plugins/issues/${number}`}
             target="_blank"
             rel="noopener noreferrer"
             aria-label={`Open GitHub issue #${number}`}

@@ -12,7 +12,7 @@ const __dirname = dirname(__filename);
 const TIMEOUT = 10000;
 const CONCURRENT_REQUESTS = 10;
 const PLUGINS_JSON_URL =
-  'https://raw.githubusercontent.com/LNReader/lnreader-plugins/refs/heads/plugins/v3.0.0/.dist/plugins.json';
+  'https://raw.githubusercontent.com/noaione/lnreader-plugins/refs/heads/repo/.dist/plugins.json';
 
 const results = {
   accessible: [],

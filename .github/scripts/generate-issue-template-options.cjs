@@ -1,5 +1,5 @@
-const version = require('../../package.json').version;
-const dist = `plugins/v${version}`;
+const repo = process.env.GITHUB_REPOSITORY || 'noaione/lnreader-plugins';
+const dist = 'repo';
 const fs = require('fs');
 
 const rawText = fs.readFileSync(
@@ -12,7 +12,7 @@ async function main() {
 
   try {
     const response = await fetch(
-      `https://raw.githubusercontent.com/LNReader/lnreader-plugins/${dist}/.dist/plugins.min.json`,
+      `https://raw.githubusercontent.com/${repo}/${dist}/.dist/plugins.min.json`,
     );
 
     if (!response.ok) {

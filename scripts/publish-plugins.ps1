@@ -1,18 +1,17 @@
-$current=$(git rev-parse --abbrev-ref HEAD)
-$version=$(node -e "console.log(require('./package.json').version);")
-$dist="plugins/v$($version)"
+$dist = "repo"
+$current = $(git rev-parse --abbrev-ref HEAD)
 
-echo "Publishing plugins: $current -> $dist (v$version)"
+echo "Publishing plugins: $current -> $dist"
 
-$exists=$(git show-ref refs/heads/$dist)
+$exists = $(git show-ref refs/heads/$dist)
 
-if  ($exists){
+if ($exists) {
     git branch -D $dist
 }
 
 git checkout --orphan $dist
 
-if(-Not $?){
+if (-Not $?) {
     echo "❌ ERROR: Failed to create branch $dist"
     exit 1
 }
@@ -21,7 +20,9 @@ git reset
 rm -r -fo .js
 echo "Compiling TypeScript..."
 npx tsc --project tsconfig.production.json
+$env:BRANCH = $dist
 npm run build:manifest
+$env:BRANCH = $null
 
 if (-not (Test-Path .dist) -or -not (Get-ChildItem -Path .dist -Force)) {
     echo "❌ ERROR: Manifest generation failed - .dist is missing or empty"
@@ -37,4 +38,3 @@ git commit -m "chore: Publish Plugins"
 git push -f origin $dist
 git checkout -f $current
 echo "✅ Published to $dist"
-

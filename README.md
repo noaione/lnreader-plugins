@@ -1,9 +1,9 @@
 # LNReader Plugins
 
 <p>
-<img alt="Total number of available plugins" src="https://raw.githubusercontent.com/LNReader/lnreader-plugins/plugins/v3.0.0/total.svg">
-<img alt="Open plugin requests" src="https://img.shields.io/github/issues/lnreader/lnreader-plugins/plugin%20request?color=success&label=plugin%20requests">
-<img alt="Open bug reports" src="https://img.shields.io/github/issues/lnreader/lnreader-plugins/bug?color=red&label=bugs">
+<img alt="Total number of available plugins" src="https://raw.githubusercontent.com/noaione/lnreader-plugins/repo/total.svg">
+<img alt="Open plugin requests" src="https://img.shields.io/github/issues/noaione/lnreader-plugins/plugin%20request?color=success&label=plugin%20requests">
+<img alt="Open bug reports" src="https://img.shields.io/github/issues/noaione/lnreader-plugins/bug?color=red&label=bugs">
 </p>
 
 Community-driven plugin repository for [LNReader](https://github.com/LNReader/lnreader). This repository hosts plugins and manages related issues and requests.
@@ -42,7 +42,7 @@ The issue-report panel uses `VITE_ISSUE_INDEX_URL` when set. Add it to `.env.loc
 VITE_ISSUE_INDEX_URL=https://example.com/issue-index.min.json
 ```
 
-If unset, the playground uses `https://raw.githubusercontent.com/LNReader/lnreader-plugins/issue-index/issue-index.min.json`.
+If unset, the playground uses `https://raw.githubusercontent.com/noaione/lnreader-plugins/issue-index/issue-index.min.json`.
 
 Request or validation failures show an error with a Retry action. The playground does not use a bundled local snapshot.
 
@@ -50,12 +50,12 @@ Request or validation failures show an error with a Retry action. The playground
 
 **From GitHub (Automated):**
 
-Push your changes to the `master` branch. The [GitHub Action](./.github/workflows/publish-plugins.yml) automatically builds and publishes plugins to the `plugins` branch.
+Push your changes to the `master` branch. The [GitHub Action](./.github/workflows/publish-plugins.yml) automatically builds and publishes plugins to the `repo` branch.
 
 Add your repository URL to the app:
 
 ```
-https://raw.githubusercontent.com/<username>/<repo>/plugins/<tag>/.dist/plugins.min.json
+https://raw.githubusercontent.com/<username>/<repo>/repo/.dist/plugins.min.json
 ```
 
 **From Localhost:**
@@ -68,4 +68,4 @@ Add `http://10.0.2.2/.dist/plugins.min.json` (Android emulator) to the app. Requ
 
 ## Disclaimer
 
-The developers are not affiliated with any content providers. If you are a non-aggregator website owner, you may request plugin removal via [Discord](https://discord.gg/QdcWN4MD63) or by [creating an issue](https://github.com/LNReader/lnreader-plugins/issues/new). Removed sites are added to the [blacklist](BLACKLIST.json).
+The developers are not affiliated with any content providers. If you are a non-aggregator website owner, you may request plugin removal by [creating an issue](https://github.com/noaione/lnreader-plugins/issues/new). Removed sites are added to the [blacklist](BLACKLIST.json).
