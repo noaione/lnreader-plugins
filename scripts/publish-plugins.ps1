@@ -19,8 +19,6 @@ if(-Not $?){
 
 git reset
 rm -r -fo .js
-npm run clean:multisrc
-npm run build:multisrc
 echo "Compiling TypeScript..."
 npx tsc --project tsconfig.production.json
 npm run build:manifest

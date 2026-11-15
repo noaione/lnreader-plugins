@@ -29,8 +29,6 @@ if [[ "$1" == "--all-branches" ]]; then
             git branch -D $dist
         fi
         git stash pop
-        npm run clean:multisrc
-        npm run build:multisrc
         echo "Compiling TypeScript..."
         npx tsc --project tsconfig.production.json
         echo "# $branch" >> $GITHUB_STEP_SUMMARY
@@ -80,8 +78,6 @@ fi
 
 git reset
 rm -rf .js
-npm run clean:multisrc
-npm run build:multisrc
 echo "Compiling TypeScript..."
 npx tsc --project tsconfig.production.json
 npm run build:manifest
