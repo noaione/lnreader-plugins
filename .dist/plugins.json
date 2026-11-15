@@ -1,0 +1,11 @@
+[
+	{
+		"id": "third-draft",
+		"name": "Third Draft",
+		"site": "thirdDraftUrl",
+		"lang": "Multi",
+		"version": "1.0.0",
+		"url": "https://raw.githubusercontent.com/noaione/lnreader-plugins/repo/.js/src/plugins/multi/third-draft.js",
+		"iconUrl": "https://raw.githubusercontent.com/noaione/lnreader-plugins/repo/public/static/src/multi/third-draft/icon.png"
+	}
+]
